@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "cd40989e-8e73-4702-8b13-d98d8187383d",
+		"name": "OpenAI - GPT 3.5 Turbo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2354738"
+	},
+	"item": [
+		{
+			"name": "Conversational bot - Pizzeria Valentino",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"model\": \"gpt-3.5-turbo\",\n    \"messages\": [\n        {\n            \"role\": \"system\",\n            \"content\": \"Your name is Giuseppe and you are an assistant for a pizzeria named Pizzeria Valentino Try to be helpful.\"\n        },\n        {\n            \"role\": \"user\",\n            \"content\": \"What kind of pizzas do you have?\"\n        },\n        {\n            \"role\": \"assistant\",\n            \"content\": \"We only have: margarita, prosciutto e fungi, and quattro formaggi.\"\n        },\n        {\n            \"role\": \"user\",\n            \"content\": \"Hello, I would like to order a pizza.\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.openai.com/v1/chat/completions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openai",
+						"com"
+					],
+					"path": [
+						"v1",
+						"chat",
+						"completions"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{apiKey}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apiKey",
+			"value": "FIX ME",
+			"type": "string"
+		}
+	]
+}
