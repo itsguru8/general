@@ -1,0 +1,29 @@
+{
+    "development_process" : 
+    {
+        "phases": [
+            {
+                "name" :  "Study",
+                "sequence" : "1",
+                "test_types" :  ["PoC","Spike"],
+                "reason_for_slippage" : ["Missed in Document Review"]
+            },
+            {
+                "name" : "Design"  ,
+                "sequence" : "2",
+                "test_types" :  ["Functional Tests", "TAF Testing","Non Functional Testing","RN Testing"],
+                "reason_for_slippage" : ["Insufficient tests", "Intermittent fault","Missed Impact"] 
+	        },
+            {
+                "name": "Main Track Verification" ,
+                "sequence" : "3",
+                "test_types" :  ["Main Track Testing"],
+                "reason_for_slippage" : ["Insufficent tests"]
+	        },
+            {
+                "name": "Customer" ,
+                "sequence" : "4"
+	        }
+        ]
+    }
+}

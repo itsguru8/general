@@ -1,0 +1,8 @@
+#!/bin/bash
+clear
+
+#python3 prepare-input_v2.py pilotdump_2TRs.txt input_for_localAI_2TR.json
+
+rm vault.txt
+#python3 localrag-v2.py dev-process.json input_for_localAI_2TR.json
+python3 localrag-v2.py

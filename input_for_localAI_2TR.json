@@ -1,0 +1,31 @@
+{"Issues": [
+    {"Issue-Id": "726123", 
+    "fields": {"summary": "Elem_mgr healthcheck fails after Elem_mgr restore", 
+    "Test Phase(found)": "Customer", 
+    "Should have been found in (phase)": "Design", 
+    "Should have been found in (type)": "Functional Tests", 
+    "Reason for slippage": "Insufficient tests"}
+    }, 
+    {"Issue-Id": "726432", 
+    "fields": {"summary": "Document error in Upgrade Guide", 
+    "Test Phase(found)": "Customer", 
+    "Should have been found in (phase)": "Study", 
+    "Should have been found in (type)": "Spike", 
+    "Reason for slippage": "No slippage"}
+    },
+    {"Issue-Id": "726321", 
+    "fields": {"summary": "Bulk Import fails after Upgrade", 
+    "Test Phase(found)": "Customer", 
+    "Should have been found in (phase)": "Design", 
+    "Should have been found in (type)": "Main Track Testing", 
+    "Reason for slippage": "No slippage"}
+    },
+    {"Issue-Id": "726210", 
+    "fields": {"summary": "ASU job fails after Upgrade", 
+    "Test Phase(found)": "Design", 
+    "Should have been found in (phase)": "Main Track Verification", 
+    "Should have been found in (type)": "Main Track Testing", 
+    "Reason for slippage": "No slippage"}
+    }
+    ]
+}
